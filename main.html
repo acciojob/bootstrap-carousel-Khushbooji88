@@ -2,12 +2,48 @@
 <html>
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<style>
+		.carousel-inner {
+    width: 100%; /* Adjust this as per your needs */
+    max-height: 400px; /* Change this as required */
+}
+
+.item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 400px; /* Change this as required */
+}
+
+.carousel-control {
+    background-image: none;
+}
+
+.carousel-control.left {
+    color: #f00; /* Change this as required */
+}
+
+.carousel-control.right {
+    color: #0f0; /* Change this as required */
+}
+	</style>
 </head>
 <body>
-    <!-- Write your code here -->
-    <!-- Bootstrap Bundle with Popper -->
+    <div id="myCarousel" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="item active first-slide">
+                <!-- Content for the first slide goes here -->
+            </div>
+            <!-- Add the remaining slides here -->
+        </div>
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
- 
 </html>
